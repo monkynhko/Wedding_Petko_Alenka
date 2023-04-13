@@ -1,0 +1,130 @@
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("photos/header-background.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+}
+
+header {
+  background-color: #E1DAD1;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 48px;
+  color: #222;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.content {
+  flex-basis: 50%;
+  max-width: 500px;
+  padding: 20px;
+}
+
+.content h2 {
+  font-size: 36px;
+  color: #222;
+}
+
+.content p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.image {
+  flex-basis: 40%;
+  max-width: 500px;
+  padding: 20px;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+}
+
+#countdown {
+  background-color: #EFE8E1;
+}
+
+#countdown .timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time-item {
+  margin: 0 10px;
+}
+
+.time {
+  font-size: 48px;
+  color: #222;
+}
+
+.time-unit {
+  font-size: 18px;
+  color: #555;
+}
+
+#our-story {
+  background-color: #F5F0EB;
+}
+
+#get-to-event {
+  background-color: #E1DAD1;
+}
+
+#more-info {
+  background-color: #F5F0EB;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .content,
+  .image {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  #countdown .timer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .time-item {
+    margin: 10px 0;
+  }
+
+  #countdown .timer .time,
+  .time-unit {
+    font-size: 24px;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  .content h2 {
+    font-size: 24px;
+  }
+
+  .content p {
+    font-size: 16px
