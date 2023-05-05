@@ -121,10 +121,6 @@ h1 {
   }
 
   .content,
-  .image {
-    flex-basis: 100%;
-    max-width: 100%;
-  }
 
   #countdown .timer {
     flex-direction: column;
@@ -153,9 +149,6 @@ h1 {
   margin-top: 10vh;
 }
 
-  h1 {
-    font-size: 36px;
-  }
 
   .content h2 {
     font-size: 24px;
@@ -169,29 +162,28 @@ h1 {
   line-height: 1.5;
 }
 	header {
-  background-image: url("photos/ALI_oznamko_web_mobile.jpg");
+  background-image: url("photos/ALI_oznamko web_mobile.jpg");
   background-repeat: no-repeat;
   background-size:cover;
-  padding: 20px;
   height:100vh;
 }
 
 #our-story {
-  background-image: url("photos/ALI_oznamko_web_empty_mobile.jpg");
+  background-image: url("photos/ALI_oznamko web_empty_mobile.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height:100vh;
 }
 
 #get-to-event {
-  background-image: url("photos/ALI_oznamko_web_3_mobile.jpg");
+  background-image: url("photos/ALI_oznamko web_3_mobile.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height:100vh;
 }
 
 #more-info {
-  background-image: url("photos/ALI_oznamko_web_4_mobile.jpg");
+  background-image: url("photos/ALI_oznamko web_4_mobile.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height:100vh;
