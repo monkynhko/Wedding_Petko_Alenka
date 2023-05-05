@@ -164,27 +164,26 @@ h1 {
 	header {
   background-image: url("photos/ALI_oznamko web_mobile.jpg");
   background-repeat: no-repeat;
-  background-size:cover;
+  margin-top:-25vh;
+  margin-bottom:26vh;
   height:100vh;
 }
 
 #our-story {
   background-image: url("photos/ALI_oznamko web_empty_mobile.jpg");
-  background-size: cover;
   background-repeat: no-repeat;
-  height:100vh;
+  height:135vh;
+  padding-top:-35vh;
 }
 
 #get-to-event {
   background-image: url("photos/ALI_oznamko web_3_mobile.jpg");
-  background-size: cover;
   background-repeat: no-repeat;
-  height:100vh;
+  height:110vh;
 }
 
 #more-info {
   background-image: url("photos/ALI_oznamko web_4_mobile.jpg");
-  background-size: cover;
   background-repeat: no-repeat;
   height:100vh;
 }
