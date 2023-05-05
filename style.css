@@ -47,4 +47,19 @@ section {
 		height: auto;
 		min-height: 100vh;
 	}
+	#section1 {
+	background-image: url('photos/ALI_oznamko web_mobile.jpg');
+}
+
+#section2 {
+	background-image: url('photos/ALI_oznamko web_empty_mobile.jpg');
+}
+
+#section3 {
+	background-image: url('photos/ALI_oznamko web_3_mobile.jpg');
+}
+
+#section4 {
+	background-image: url('photos/ALI_oznamko web_4_mobile.jpg');
+}
 }
