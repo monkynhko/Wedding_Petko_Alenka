@@ -7,6 +7,8 @@ body {
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
+	  font-size: 16px;
+  line-height: 1.5;
 }
 
 header {
@@ -119,10 +121,6 @@ h1 {
     flex-direction: column;
     padding: 20px;
   }
-  .header{
-	  width:100%;
-	  height:auto;
-  }
 
   .content,
   .image {
@@ -142,7 +140,20 @@ h1 {
   #countdown .timer .time,
   .time-unit {
     font-size: 24px;
+	margin: 5px;
   }
+  
+  #our-story,
+#get-to-event,
+#more-info {
+  background-size: cover;
+}
+
+#our-story-content h2,
+#get-to-event-content h2,
+#more-info-content h2 {
+  margin-top: 10vh;
+}
 
   h1 {
     font-size: 36px;
@@ -154,4 +165,14 @@ h1 {
 
   .content p {
     font-size: 16px
-}}
+}
+	body {
+  font-size: 16px;
+  line-height: 1.5;
+}
+	header {
+  height: 200px;
+  padding: 20px 0;
+}
+
+}
