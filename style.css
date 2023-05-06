@@ -103,7 +103,19 @@ header {
 }
 
 #more-info {
-  background-image: url("photos/ALI oznamko web_4.jpg");
+  background-image: url("photos/ALI_oznamko web_4_mobile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:100vh;
+}
+#ubytovanie {
+  background-image: url("photos/birds_blue_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:100vh;
+}
+#kStolu {
+  background-image: url("photos/kStolu.png");
   background-size: cover;
   background-repeat: no-repeat;
   height:100vh;
@@ -143,6 +155,18 @@ header {
 	padding-top:40vw;
 }
 
+#contentKStolu{
+	padding-top:40%;
+}
+
+#contentKStolu h2{
+	color:white !important;
+}
+
+#contentUbytovanie h2{
+	padding-top:5%;
+	color:#333d4a;
+}
 
   .content h2 {
     font-size: 1rem;
@@ -190,6 +214,23 @@ header {
   height:100vw;
   margin-top:-105px;
   padding-bottom:5px;
+}
+
+#kStolu {
+  background-image: url("photos/kStolu.png");
+  background-repeat: no-repeat;
+  background-size:contain;
+  width: 100%;
+  height:100vw;
+}
+
+#ubytovanie {
+  background-image: url("photos/birds_blue_bg.png");
+  background-repeat: no-repeat;
+  background-size:contain;
+  width: 100%;
+  height:auto;
+  min-height:120vw;
 }
 
 
