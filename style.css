@@ -139,10 +139,17 @@ header {
   margin-top: 10vh;
 }
 
+#our-story-content{
+	padding-top:40vw;
+}
+
 
   .content h2 {
-    font-size: 24px;
+    font-size: 1rem;
+	text-align:left;
   }
+  
+
 
   .content p {
     font-size: 16px
@@ -156,7 +163,7 @@ header {
   background-repeat: no-repeat;
   background-size:contain;
   width: 100%;
-  height:100vw;
+  height:110vw;
 }
 
 #our-story {
@@ -180,7 +187,7 @@ header {
   background-repeat: no-repeat;
   background-size:contain;
   width: 100%;
-  height:78vh;
+  height:100vw;
   margin-top:-105px;
   padding-bottom:5px;
 }
