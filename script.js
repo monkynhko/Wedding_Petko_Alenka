@@ -1,26 +1,31 @@
-function countdown() {
-	const now = new Date();
-	const eventDate = new Date("September 09, 2023 00:00:00");
-	const currentTime = now.getTime();
-	const eventTime = eventDate.getTime();
+// script.js
+// Calculate remaining time until wedding date
+var weddingDate = new Date("09/09/2023").getTime();
+var countdownInterval = setInterval(function() {
+  var now = new Date().getTime();
+  var timeDifference = weddingDate - now;
+  
+  var days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+  
+  document.getElementById("days").innerHTML = formatTime(days);
+  document.getElementById("hours").innerHTML = formatTime(hours);
+  document.getElementById("minutes").innerHTML = formatTime(minutes);
+  document.getElementById("seconds").innerHTML = formatTime(seconds);
+  
+  if (timeDifference < 0) {
+    clearInterval(countdownInterval);
+    document.getElementById("timer").innerHTML = "It's our wedding day!";
+  }
+}, 1000);
 
-	const remainingTime = eventTime - currentTime;
-
-	const seconds = Math.floor(remainingTime / 1000);
-	const minutes = Math.floor(seconds / 60);
-	const hours = Math.floor(minutes / 60);
-	const days = Math.floor(hours / 24);
-
-	const displayDays = days;
-	const displayHours = hours % 24;
-	const displayMinutes = minutes % 60;
-	const displaySeconds = seconds % 60;
-
-	document.getElementById("countdown").innerHTML = `
-		${displayDays}d : ${displayHours}h : ${displayMinutes}m : ${displaySeconds}s
-	`;
+// Helper function to format time with leading zero
+function formatTime(time) {
+  if (time < 10) {
+    return "0" + time;
+  }
+  return time;
 }
 
-countdown();
-
-setInterval(countdown, 1000);

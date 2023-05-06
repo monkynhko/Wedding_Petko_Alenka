@@ -1,65 +1,191 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
+/* style.css */
 body {
-	font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+	  font-size: 16px;
+  line-height: 1.5;
 }
 
-section {
-	height: 100vh;
-	background-size: cover;
-	background-position: center;
+header {
+  background-image: url("photos/ALI oznamko web_.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  padding: 20px;
+  height:100vh;
 }
 
-#section1 {
-	background-image: url('photos/ALI oznamko web_.jpg');
+h1 {
+  margin-top:50vh;
+  font-size: 48px;
+  color: #222;
 }
 
-#section2 {
-	background-image: url('photos/ALI oznamko web_empty.jpg');
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 0;
 }
 
-#section3 {
-	background-image: url('photos/ALI oznamko web_3.jpg');
+.content {
+  flex-basis: 50%;
+  max-width: 800px;
 }
 
-#section4 {
-	background-image: url('photos/ALI oznamko web_4.jpg');
+.container h2{
+	color: #c9d5e1;
+	text-align:left;
 }
 
+.content h2 {
+  font-size: 35px;
+  color: #4d5f77;
+}
 
+.content p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.image {
+  flex-basis: 40%;
+  max-width: 500px;
+  padding: 20px;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+}
 
 #countdown {
-	font-size: 48px;
-	font-weight: bold;
-	color: white;
-	top: 0;
-	right: 0;
-	background-color: skyblue;
-	padding: 10px;
+  background-color: #4d5f77;
+}
+
+
+#countdown .timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time-item {
+  margin: 0 10px;
+}
+
+.time {
+  font-size: 48px;
+  color: #c9d5e1;
+}
+
+.time-unit {
+  font-size: 18px;
+  color: #c9d5e1;
+}
+
+#our-story {
+  background-image: url("photos/ALI oznamko web_empty.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:100vh;
+}
+
+#get-to-event {
+  background-image: url("photos/ALI oznamko web_3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:100vh;
+}
+
+#our-story-content h2{
+	margin-top:35vh;
+}
+
+#more-info {
+  background-image: url("photos/ALI oznamko web_4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height:100vh;
 }
 
 @media screen and (max-width: 768px) {
-	section {
-		height: auto;
-		min-height: 100vh;
-	}
-	#section1 {
-	background-image: url('photos/ALI_oznamko web_mobile.jpg');
+  .container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .content,
+
+  #countdown .timer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .time-item {
+    margin: 10px 0;
+  }
+
+  #countdown .timer .time,
+  .time-unit {
+    font-size: 24px;
+	margin: 5px;
+  }
+  
+  #our-story,
+#get-to-event,
+#more-info {
+  background-size: cover;
 }
 
-#section2 {
-	background-image: url('photos/ALI_oznamko web_empty_mobile.jpg');
+#our-story-content h2,
+#get-to-event-content h2,
+#more-info-content h2 {
+  margin-top: 10vh;
 }
 
-#section3 {
-	background-image: url('photos/ALI_oznamko web_3_mobile.jpg');
+
+  .content h2 {
+    font-size: 24px;
+  }
+
+  .content p {
+    font-size: 16px
+}
+	body {
+  font-size: 16px;
+  line-height: 1.5;
+}
+	header {
+  background-image: url("photos/ALI_oznamko web_mobile.jpg");
+  background-repeat: no-repeat;
+  margin-top:-25vh;
+  margin-bottom:26vh;
+  height:100vh;
 }
 
-#section4 {
-	background-image: url('photos/ALI_oznamko web_4_mobile.jpg');
+#our-story {
+  background-image: url("photos/ALI_oznamko web_empty_mobile.jpg");
+  background-repeat: no-repeat;
+  height:135vh;
+  padding-top:-35vh;
 }
+
+#get-to-event {
+  background-image: url("photos/ALI_oznamko web_3_mobile.jpg");
+  background-repeat: no-repeat;
+  height:110vh;
+}
+
+#more-info {
+  background-image: url("photos/ALI_oznamko web_4_mobile.jpg");
+  background-repeat: no-repeat;
+  height:100vh;
+}
+
 }
