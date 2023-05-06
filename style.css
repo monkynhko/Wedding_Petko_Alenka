@@ -152,15 +152,15 @@ header {
   line-height: 1.5;
 }
 	header {
-  background-image: url("photos/photos/ALI oznamko web_.jpg");
+  background-image: url("photos/ALI_oznamko web_mobile.jpg");
   background-repeat: no-repeat;
   background-size:contain;
   width: 100%;
-  height:100vh;
+  height:90vh;
 }
 
 #our-story {
-  background-image: url("photos/ALI oznamko web_empty.jpg");
+  background-image: url("photos/ALI_oznamko web_empty_mobile.jpg");
   background-repeat: no-repeat;
   background-size:contain;
   width: 100%;
@@ -168,19 +168,20 @@ header {
 }
 
 #get-to-event {
-  background-image: url("photos/ALI oznamko web_3.jpg");
-  background-repeat: no-repeat;
-  background-size:cover;
-  width: 100%;
-  height:100vh;
-}
-
-#more-info {
-  background-image: url("photos/ALI oznamko web_4.jpg");
+  background-image: url("photos/ALI_oznamko web_3_mobile.jpg");
   background-repeat: no-repeat;
   background-size:contain;
   width: 100%;
-  height:100vh;
+  height:78vh;
+}
+
+#more-info {
+  background-image: url("photos/ALI_oznamko web_4_mobile.jpg");
+  background-repeat: no-repeat;
+  background-size:contain;
+  width: 100%;
+  height:78vh;
+  margin-top:-5px;
 }
 
 
